@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta author="Tyler Vu">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Personal Portfolio</title>
+	<link rel="shortcut icon" type="image/x-icon" href="content/black-logo.png" />
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/mycss.css" rel="stylesheet">
+  </head>
+  <body>
+  	<nav class="navbar navbar-inverse navbar-fixed-top">
+	    <div class="container-fluid">
+	    	<!--source: https://www.w3schools.com/bootstrap/tryit.asp?filename=trybs_navbar_collapse&stacked=h -->
+    	    <div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>                        
+				</button>
+		    </div>
+		    <div class="collapse navbar-collapse" id="myNavbar">
+		      	<ul class="nav navbar-nav navbar-right">
+		    		<li><a href="#home"><i class="glyphicon glyphicon-home"></i> Home</a></li>
+		    		<li><a href="#about"><i class="glyphicon glyphicon-user"></i> About Me</a></li>
+		    		<li><a href="#projects"><i class="glyphicon glyphicon-folder-open"></i> Projects</a></li>
+		    		<li><a href="#experience"><i class="glyphicon glyphicon-briefcase"></i> Experience</a></li>
+		    		<li><a href="#contact"><i class="glyphicon glyphicon-envelope"></i> Contact Me &nbsp; &nbsp; &nbsp; &nbsp;</a></li>
+		    	</ul>
+   			 </div>
+	    </div>
+	</nav>
+	<div id="home" class="container-fluid">
+		<div class="row">
+			<div class="rectangle">
+				<img id="logo" class="img-hidden" src="content/white-logo.png">
+				<img id="landing-img" class="img-hidden" src="content/background1.jpeg">
+				<ul class="fly-in-text">
+					<li class="transition-hidden">Imagine.</li>
+					<li class="transition-hidden">Design.</li>
+					<li class="transition-hidden">Create.</li>
+				</ul>
+			</div>
+		</div>
+		<div class="row">
+			<div id="about" class="rectangle">
+				<p class="block-text">
+					 I did not realize programming was a passion of mine until I was forced to consider my future during college.<br> 
+					I had to ask myself seriously,<strong>"What could I imagine myself doing for the rest of my life?"</strong> <br>
+					Since I was a child I whole heartedly believed that I wanted to become a Nurse. But as soon as I started programming, <br>
+					I realized that I have been lying to myself the whole time. I instantly fell in love and I never look back. <br>
+					My name is <strong>Tyler Vu</strong> and I am a <strong>Software Engineer</strong>.
+				</p>
+				<div style="text-align: center;">
+					<img id="profile-picture" class="lazy" data-src="content/profile-picture.jpg">
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div id="projects" class="smaller-rectangle">
+				<p class="block-text">
+					My personal projects range from creating applications that make my life easier <br>
+					to writing <strong>artifical intelligence</strong> for Runescape AKA Bot Scripts. <br> 
+					Working at <strong>The Trade Desk</strong> however has broadened my horizons significantly with projects that <br>
+					deal with the creation and manipulation of company data. <br> <br> <br>
+					<strong><i>You can view my GitHub account by clicking on the logo below.</i></strong>
+				</p>
+				<div style="text-align:center;">
+					<a href="https://github.com/TylerKienVu" target="_blank"><img id="github-picture" class="lazy" data-src="content/github.png"></a>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div id="experience" class="smaller-rectangle">
+				<p class="block-text">
+					I had the privilege to work at <strong>The Trade Desk</strong> as a <strong>Jr. Programmer</strong>. <br>
+					I was a part of a team with four other Jr. Programmers where we were tasked <br>
+					with Data Engineering Projects. We designed, developed, and maintained a system <br>
+					called <strong>Polaris</strong> that the company uses to create first party data. <br>
+					The main technologies used for the Polaris project were <strong>ASP.Net</strong>, <strong>C#</strong>, and <strong>T-SQL</strong>.<br><br>
+					<strong><i>You can view the official Trade Desk website by clicking on the logo below.</i></strong>
+				</p>
+				<div style="text-align:center;">
+					<a href="https://www.thetradedesk.com/" target="_blank"><img id="ttd-picture" class="lazy" data-src="content/ttd.png"></a>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div id="contact" class="smaller-rectangle">
+				<h1>
+				<br><br><br>I would love to hear from you!<br>
+				</h1>
+				<p class="block-text">You can reach me by email at <a href="mailto:tylerkienvu@gmail.com">tylerkienvu@gmail.com</a></p>
+				<p class="block-text">Take a look at my <a href="https://www.dropbox.com/s/tvr7h7rjpi9mklz/resume.pdf?dl=0" target="_blan">Resume</a>
+				</p>
+			</div>
+		</div>
+	</div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script type="text/javascript" src="js/jquery.lazy.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/scripts.js"></script>
+  </body>
+</html>
