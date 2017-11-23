@@ -38,21 +38,21 @@ $(document).ready(function(){
 function startAnimation() {
 	setTimeout(function() {
 		$('.fly-in-text li:nth-child(1)').removeClass('transition-hidden');
-	}, 500);
-
-	setTimeout(function() {
-		$('.fly-in-text li:nth-child(2)').removeClass('transition-hidden');
 	}, 2000);
 
 	setTimeout(function() {
-		$('.fly-in-text li:nth-child(3)').removeClass('transition-hidden');
+		$('.fly-in-text li:nth-child(2)').removeClass('transition-hidden');
 	}, 3500);
 
 	setTimeout(function() {
+		$('.fly-in-text li:nth-child(3)').removeClass('transition-hidden');
+	}, 5000);
+
+	setTimeout(function() {
 		$('#logo').removeClass('img-hidden');
-	}, 4500);
+	}, 6000);
 
 	setTimeout(function() {
 		$('#landing-img').removeClass('img-hidden');
-	}, 4500);
+	}, 6000);
 }
