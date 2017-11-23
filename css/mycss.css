@@ -224,15 +224,18 @@ li.transition-hidden:nth-child(3) {
 		height: 70vh;
 	}
 	#experience {
-		height: 80vh;
+		height: 100vh;
 	}
 	#about {
 		height: 140vh;
 	}
+	#projects {
+		height: 80vh;
+	}
 	#info-box {
 		font-size: 20px;
 		top: 30%;
-		left: 20%;
+		left: 5%;
 	}
 }
 
