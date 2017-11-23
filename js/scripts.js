@@ -36,6 +36,11 @@ $(document).ready(function(){
 });
 
 function startAnimation() {
+	$('.fly-in-text li:nth-child(1)').removeClass('hidden');
+	$('.fly-in-text li:nth-child(2)').removeClass('hidden');	
+	$('.fly-in-text li:nth-child(3)').removeClass('hidden');
+	$('#logo').removeClass('hidden');
+	$('#landing-img').removeClass('hidden');
 	setTimeout(function() {
 		$('.fly-in-text li:nth-child(1)').removeClass('transition-hidden');
 	}, 2000);
@@ -45,6 +50,7 @@ function startAnimation() {
 	}, 3500);
 
 	setTimeout(function() {
+	
 		$('.fly-in-text li:nth-child(3)').removeClass('transition-hidden');
 	}, 5000);
 
