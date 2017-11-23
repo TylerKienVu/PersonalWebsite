@@ -25,7 +25,7 @@ nav {
 .fly-in-text {
 	list-style: none;
 	position: absolute;
-	top: 15%;
+	top: 20%;
 	left: 50%;
 	transform: translateX(-50%) translateY(-50%);
 }	
@@ -130,8 +130,9 @@ li.transition-hidden:nth-child(3) {
 }
 #info-box {
 	position: relative;
-	top: -12%;
+	top: -10%;
 	left: 40%;
+	font-size: 25px;
 }
 
 #github-picture {
@@ -152,6 +153,10 @@ li.transition-hidden:nth-child(3) {
 
 /* slightly smaller desktop */
 @media only screen and (max-width: 1500px){
+	.fly-in-text {
+		top: 30%;
+		left: 60%;
+	}
 	#profile-picture {
 		max-height: 500px;
 	}
@@ -162,12 +167,16 @@ li.transition-hidden:nth-child(3) {
 	.block-text {
 		font-size: 1.8em;
 	}
+	#info-box {
+		font-size: 20px;
+		left: 45%;
+	}
 }
 
 /* This query is for tablets */
 @media only screen and (max-width: 900px) and (min-width: 500px){
 	.fly-in-text {
-		top: 20%;
+		top: 35%;
 		left: 60%;
 	}
 	.block-text {
@@ -179,6 +188,14 @@ li.transition-hidden:nth-child(3) {
 	}
 	.smaller-rectangle {
 		height: 60vh;
+	}
+	#about {
+		height: 140vh;
+	}
+	#info-box {
+		font-size: 20px;
+		top: 30%;
+		left: 20%;
 	}
 }
 
@@ -210,7 +227,12 @@ li.transition-hidden:nth-child(3) {
 		height: 80vh;
 	}
 	#about {
-		height: 100vh;
+		height: 140vh;
+	}
+	#info-box {
+		font-size: 20px;
+		top: 30%;
+		left: 20%;
 	}
 }
 
