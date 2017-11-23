@@ -43,22 +43,22 @@ function startAnimation() {
 	$('#landing-img').removeClass('hidden');
 	setTimeout(function() {
 		$('.fly-in-text li:nth-child(1)').removeClass('transition-hidden');
-	}, 2000);
+	}, 1000);
 
 	setTimeout(function() {
 		$('.fly-in-text li:nth-child(2)').removeClass('transition-hidden');
-	}, 3500);
+	}, 2500);
 
 	setTimeout(function() {
 	
 		$('.fly-in-text li:nth-child(3)').removeClass('transition-hidden');
-	}, 5000);
+	}, 4000);
 
 	setTimeout(function() {
 		$('#logo').removeClass('img-hidden');
-	}, 6000);
+	}, 5000);
 
 	setTimeout(function() {
 		$('#landing-img').removeClass('img-hidden');
-	}, 6000);
+	}, 5000);
 }
