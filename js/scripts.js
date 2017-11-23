@@ -12,7 +12,7 @@ $(document).ready(function(){
     });
     //source for smooth scrolling: https://www.w3schools.com/jquery/tryit.asp?filename=tryjquery_eff_animate_smoothscroll
 	// Add smooth scrolling to all links
-	$("a").on('click', function(event) {
+	$("li a").on('click', function(event) {
 
 		// Make sure this.hash has a value before overriding default behavior
 		if (this.hash !== "") {
