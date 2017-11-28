@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta author="Tyler Vu">
+    <title>Project Report</title>
+	<script src="https://code.jquery.com/jquery-3.2.1.min.js"
+	integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+	crossorigin="anonymous"></script>
+	<script src="js/jquery.lazy.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+	<script src="https://use.fontawesome.com/f83b38ae27.js"></script>
+	<script src="js/scripts.js"></script>	
+	<link rel="shortcut icon" type="image/x-icon" href="content/black-logo.png" />
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">    
+    <link href="css/project-report-styles.css" rel="stylesheet">
+  </head>
+  <body>
+	<nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+		<button id="collapse-button" class="navbar-toggler ml-auto mt-3 mr-3 no-opacity" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+
+	  	<div class="collapse navbar-collapse" id="navbarSupportedContent">
+		    <ul class="navbar-nav ml-auto">
+		     	<li class="nav-item active no-opacity">
+		        	<a class="nav-link" href="#home"><i class="fa fa-home fa-fw" aria-hidden="true"></i>&nbsp;Home</a>
+		     	</li>
+		      	<li class="nav-item active no-opacity">
+		        	<a class="nav-link" href="#research"><i class="fa fa-user fa-fw" aria-hidden="true"></i>&nbsp;User Research</a>
+		      	</li>
+		      	<li class="nav-item active no-opacity">
+		        	<a class="nav-link" href="#testing"><i class="fa fa-list fa-fw" aria-hidden="true"></i>&nbsp;User Testing</a>
+		      	</li>
+		      	<li class="nav-item active no-opacity">
+		        	<a class="nav-link" href="#conclusion"><i class="fa fa-check-square-o fa-fw" aria-hidden="true"></i>&nbsp;Conclusion</a>
+		      	</li>
+		      	<li class="nav-item active no-opacity">
+		        	<a class="nav-link" href="index.html" target="_blank"><i class="fa fa-briefcase fa-fw" aria-hidden="true"></i>&nbsp;Personal Portfolio</a>
+		      	</li>		     		      
+		    </ul>
+	  	</div>
+	</nav>
+	<div class="container-fluid">
+		<div  id="home" class="row">
+			<div class="rectangle">
+				<div id="intro-container" class="centered-axis-x">
+					<div id="intro-part-1" class="typewriter intro centered-axis-x">
+						<h1 class="no-opacity">Hi.</h1>
+					</div>
+					<div id="intro-part-2" class="typewriter intro centered-axis-x">
+						<h1 class="no-opacity">I've learned ALOT in this class.</h1>
+					</div>	
+					<div id="intro-part-3" class="typewriter intro centered-axis-x">
+						<h1 class="no-opacity">Check out my findings!</h1>
+					</div>
+					<div id="button-container" class="centered-axis-x no-opacity">
+						<a id="about-button" href="#research" class="btn btn-outline btn-lg" role="button">Begin User Experience Journey</a>
+					</div>
+				</div>
+				<img id="logo" class="no-opacity" src="content/white-logo.png">
+				<img id="landing-img" class="lazy" data-src="content/background1.jpeg">
+			</div>
+		</div>
+		<div  id="research" class="row">
+			<div id="research-rectangle" class="rectangle">
+				<div class="section-header"><i class="fa fa-users fa-2x" aria-hidden="true"></i>&nbsp;<h2>User Research</h2></div>
+				<div id="accordion" class="info-box" role="tablist">
+				  <div class="card">
+				    <div class="card-header" role="tab" id="headingOne">
+				      <h5 class="mb-0">
+				        <a class="info-heading" data-toggle="collapse" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+				          <i class="fa fa-user fa-fw" aria-hidden="true"></i>&nbsp;User Interviews
+				        </a>
+				      </h5>
+				    </div>
+
+				    <div id="collapseOne" class="collapse show" role="tabpanel" aria-labelledby="headingOne" data-parent="#accordion">
+				      <div class="card-body">
+				        My name is <strong>Tyler Vu</strong>. I am an aspiring <strong>Software Engineer</strong> looking to leave a mark in my field.
+				      </div>
+				    </div>
+				  </div>
+				  <div class="card">
+				    <div class="card-header" role="tab" id="headingTwo">
+				      <h5 class="mb-0">
+				        <a class="collapsed info-heading" data-toggle="collapse" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+				          <i class="fa fa-bar-chart fa-fw" aria-hidden="true"></i>&nbsp;Competitor Analysis
+				        </a>
+				      </h5>
+				    </div>
+				    <div id="collapseTwo" class="collapse" role="tabpanel" aria-labelledby="headingTwo" data-parent="#accordion">
+				      <div class="card-body">
+				        I am currently attending <strong>University of California, Irvine</strong>. My major is <strong>Software Engineering</strong> and I am set to graduate <strong>March 2019</strong>.
+				      </div>
+				    </div>
+				  </div>
+				  <div class="card">
+				    <div class="card-header" role="tab" id="headingThree">
+				      <h5 class="mb-0">
+				        <a class="collapsed info-heading" data-toggle="collapse" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+				          <i class="fa fa-list fa-fw" aria-hidden="true"></i>&nbsp;Feature Value Matrix
+				        </a>
+				      </h5>
+				    </div>
+				    <div id="collapseThree" class="collapse" role="tabpanel" aria-labelledby="headingThree" data-parent="#accordion">
+				      <div class="card-body">
+				        If I had to pick one thing that I love about programming, it would be <strong>Designing</strong>. Watching a dream come to life is what I live for! I have a strong interest in furthering my <strong>Front-End Development</strong> skills and becoming a strong designer.
+				      </div>
+				    </div>
+				  </div>
+				  <div class="card">
+				    <div class="card-header" role="tab" id="headingFour">
+				      <h5 class="mb-0">
+				        <a class="collapsed info-heading" data-toggle="collapse" href="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+				          <i class="fa fa-list-ol fa-fw" aria-hidden="true"></i>&nbsp;Feature Prioritization
+				        </a>
+				      </h5>
+				    </div>
+				    <div id="collapseFour" class="collapse" role="tabpanel" aria-labelledby="headingFour" data-parent="#accordion">
+				      <div class="card-body">
+				        If I had to pick one thing that I love about programming, it would be <strong>Designing</strong>. Watching a dream come to life is what I live for! I have a strong interest in furthering my <strong>Front-End Development</strong> skills and becoming a strong designer.
+				      </div>
+				    </div>
+				  </div>				  
+				</div>				
+			</div>
+		</div>
+		<div  id="testing" class="row">
+			<div id="testing-rectangle" class="rectangle">
+				<div class="section-header"><i class="fa fa-list fa-2x" aria-hidden="true"></i>&nbsp;<h2>User Testing</h2></div>
+				<div id="accordion" class="info-box" role="tablist">
+				  <div class="card">
+				    <div class="card-header" role="tab" id="headingFive">
+				      <h5 class="mb-0">
+				        <a class="info-heading" data-toggle="collapse" href="#collapseFive" aria-expanded="true" aria-controls="collapseFive">
+				          <i class="fa fa-user fa-fw" aria-hidden="true"></i>&nbsp;User Stories
+				        </a>
+				      </h5>
+				    </div>
+
+				    <div id="collapseFive" class="collapse show" role="tabpanel" aria-labelledby="headingFive" data-parent="#accordion">
+				      <div class="card-body">
+				        My name is <strong>Tyler Vu</strong>. I am an aspiring <strong>Software Engineer</strong> looking to leave a mark in my field.
+				      </div>
+				    </div>
+				  </div>
+				  <div class="card">
+				    <div class="card-header" role="tab" id="headingSix">
+				      <h5 class="mb-0">
+				        <a class="collapsed info-heading" data-toggle="collapse" href="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+				          <i class="fa fa-sign-in fa-fw" aria-hidden="true"></i>&nbsp;Cognitive Walkthrough
+				        </a>
+				      </h5>
+				    </div>
+				    <div id="collapseSix" class="collapse" role="tabpanel" aria-labelledby="headingSix" data-parent="#accordion">
+				      <div class="card-body">
+				        I am currently attending <strong>University of California, Irvine</strong>. My major is <strong>Software Engineering</strong> and I am set to graduate <strong>March 2019</strong>.
+				      </div>
+				    </div>
+				  </div>
+				  <div class="card">
+				    <div class="card-header" role="tab" id="headingSeven">
+				      <h5 class="mb-0">
+				        <a class="collapsed info-heading" data-toggle="collapse" href="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+				          <i class="fa fa-check-square fa-fw" aria-hidden="true"></i>&nbsp;User Test
+				        </a>
+				      </h5>
+				    </div>
+				    <div id="collapseSeven" class="collapse" role="tabpanel" aria-labelledby="headingSeven" data-parent="#accordion">
+				      <div class="card-body">
+				        If I had to pick one thing that I love about programming, it would be <strong>Designing</strong>. Watching a dream come to life is what I live for! I have a strong interest in furthering my <strong>Front-End Development</strong> skills and becoming a strong designer.
+				      </div>
+				    </div>
+				  </div>				  
+				</div>
+			</div>
+		</div>	
+		<div id="conclusion" class="row">
+			<div id="conclusion-rectangle" class="rectangle">
+				<div class="section-header"><i class="fa fa-check fa-2x" aria-hidden="true"></i>&nbsp;<h2>Conclusion</h2></div>
+				<div id="accordion" class="info-box" role="tablist">
+				  <div class="card">
+				    <div class="card-header" role="tab" id="summary">
+				      <h5 class="mb-0">
+				        <a class="info-heading" data-toggle="collapse" href="#collapseSummary" aria-expanded="true" aria-controls="collapseSummary">
+				          <i class="fa fa-list-ul fa-fw" aria-hidden="true"></i>&nbsp;Summary of Findings
+				        </a>
+				      </h5>
+				    </div>
+
+				    <div id="collapseSummary" class="collapse show" role="tabpanel" aria-labelledby="summary" data-parent="#accordion">
+				      <div class="card-body">
+				        My name is <strong>Tyler Vu</strong>. I am an aspiring <strong>Software Engineer</strong> looking to leave a mark in my field.
+				      </div>
+				    </div>
+				  </div>
+				  <div class="card">
+				    <div class="card-header" role="tab" id="incorporation">
+				      <h5 class="mb-0">
+				        <a class="collapsed info-heading" data-toggle="collapse" href="#collapseIncorporation" aria-expanded="false" aria-controls="collapseIncorporation">
+				          <i class="fa fa-pencil-square-o fa-fw" aria-hidden="true"></i>&nbsp;Incorporation of Findings
+				        </a>
+				      </h5>
+				    </div>
+				    <div id="collapseIncorporation" class="collapse" role="tabpanel" aria-labelledby="headingSix" data-parent="#accordion">
+				      <div class="card-body">
+				        I am currently attending <strong>University of California, Irvine</strong>. My major is <strong>Software Engineering</strong> and I am set to graduate <strong>March 2019</strong>.
+				      </div>
+				    </div>
+				  </div>				  
+				</div>				
+			</div>
+		</div>		
+		<div id="portfolio" class="row">
+			<div id="portfolio-rectangle" class="rectangle">
+				<div id="portfolio-header" class="section-header"><i class="fa fa-briefcase fa-2x" aria-hidden="true"></i>&nbsp;<h2>Personal Portfolio</h2></div>
+				<p class="block-text">Click the link!<br><a id="email" href="index.html" target="_blank">tylerkienvu.com <i class="fa fa-user-circle fa-fw" aria-hidden="true"></i> </a></p>
+			</div>
+		</div>						
+	</div>
+  </body>
+</html>

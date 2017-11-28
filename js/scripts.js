@@ -31,8 +31,12 @@ $(document).ready(function(){
 
 	    if (scroll >= 500) {
 	        $("nav").addClass("bg-custom");
+	        $("#collapse-button").removeClass("mt-3");
+	        $("#collapse-button").removeClass("mr-3");
 	    } else {
 	        $("nav").removeClass("bg-custom");
+	       	$("#collapse-button").addClass("mt-3");
+	        $("#collapse-button").addClass("mr-3");
 	    }
 	});
 });
@@ -41,28 +45,28 @@ function startAnimation() {
 	console.log("hit");
 	setTimeout(function() {
 		$('#collapse-button').removeClass('no-opacity');
-	}, 2000);
+	}, 1000);
 	setTimeout(function() {
 		$('.navbar-nav li:nth-child(1)').removeClass('no-opacity');
-	}, 2000);
+	}, 1000);
 	setTimeout(function() {
 		$('.navbar-nav li:nth-child(2)').removeClass('no-opacity');
-	}, 2200);
+	}, 1400);
 	setTimeout(function() {
 		$('.navbar-nav li:nth-child(3)').removeClass('no-opacity');
-	}, 2600);
+	}, 1800);
 	setTimeout(function() {
 		$('.navbar-nav li:nth-child(4)').removeClass('no-opacity');
-	}, 3000);
+	}, 2200);
 	setTimeout(function() {
 		$('.navbar-nav li:nth-child(5)').removeClass('no-opacity');
-	}, 3400);
+	}, 2600);
 	setTimeout(function() {
 		$('#logo').removeClass('no-opacity');
-	}, 4000);
+	}, 3000);
 	setTimeout(function() {
 		$('#landing-img').css('filter','brightness(5%)');
-	}, 4500);
+	}, 4000);
 	setTimeout(function() {
 		$('#intro-part-1 h1').removeClass('no-opacity');
 		$('#intro-part-1 h1').addClass('short-type-animation');
@@ -72,14 +76,14 @@ function startAnimation() {
 		$("#intro-part-1 h1").css('animation',"default");		
 		$('#intro-part-2 h1').removeClass('no-opacity');
 		$('#intro-part-2 h1').addClass('medium-type-animation');
-	}, 9000);	
+	}, 8000);	
 	setTimeout(function() {
 		$("#intro-part-2 h1").css('border',"none");		
 		$("#intro-part-2 h1").css('animation',"default");	
 		$('#intro-part-3 h1').removeClass('no-opacity');
-		$('#intro-part-3 h1').addClass('long-type-animation');
-	}, 13000);		
+		$('#intro-part-3 h1').addClass('medium-type-animation');
+	}, 11000);		
 	setTimeout(function() {
 		$("#button-container").removeClass("no-opacity");
-	}, 17000)
+	}, 14000)
 }

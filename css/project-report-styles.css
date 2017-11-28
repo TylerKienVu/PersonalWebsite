@@ -30,7 +30,7 @@ nav {
 	position: relative;
 	word-wrap: break-word;
 	text-align: center;
-	top: 5%;
+	top: 10%;
 	font-family: Open Sans, Arial;
 	font-size: 1.3em;
 	padding-left: 1em;
@@ -64,7 +64,7 @@ nav {
 	width: 100%;
 	height: 100%;
 	border-radius: 50%;
-	border:3px solid #EE5716;
+	border:2px solid black;
 }
 
 .bg-custom {
@@ -77,27 +77,11 @@ nav {
     transform: translate(-50%, 0);
 }
 
-.custom-border {
-	margin-left: auto;
-	margin-right: auto;
-	height: 70px;
-	width: 70%;
-	border: 3px solid #EE5716;
-	border-radius: 16px;
-}
-
-.link-container {
-	top: 5%;	
-	margin-top: 1em;
-	margin-bottom: 7em;
-}
-
 .section-header {
 	position: relative;
 	font-size: 1.5em;	
-	margin-top: 2em;
+	top: 5%;
 	text-align: center;
-	color: #EE5716;
 }
 
 #logo {
@@ -117,61 +101,61 @@ nav {
 	-webkit-transition:all 2s;
 }
 
-#about-rectangle {
+#research-rectangle {
 	height: 170vh;
 }
 
-#projects-rectangle {
-	height: 100vh;
+#testing-rectangle {
+	height: 170vh;
 }
 
-#experience-rectangle {
-	height: 140vh;
+#conclusion-rectangle {
+	height: 130vh;
 }
 
-#contact-rectangle {
+#portfolio-rectangle {
 	height: 50vh;
 	color: white;
 	text-align: center;
 	font-size: 1em;
 }
 
-#about {
+#research {
 	background-color: #E3E3E3;
 }
 
-#projects {
+#testing {
 	background-color: white
 }
 
-#experience {
+#conclusion {
 	background-color: #E3E3E3;
 }
 
-#contact {
+#portfolio {
 	background-color: black;
 }
 
 #github-picture {
-	height: 100%;
-	width: 100%;
-	max-width: 100%;
-	max-height: 100%;
-	object-fit: contain;
-	padding: 1em;
+	padding-top: 7em;
+	margin-left: auto;
+	margin-right: auto;
+	height: auto;
+	width: auto;
+	max-width: 250px;
 }
 
 #ttd-picture {
-	height: 100%
-	width: 100%
-	max-width: 100%;
-	max-height: 100%;
-	filter: grayscale(100%);
-	object-fit: contain;
+	padding-top: 7em;
+	height: auto;
+	width: auto;
+	margin-left: auto;
+	margin-right: auto;
+	max-width: 400px;
 }
 
 #profile-picture {
-	top: 7%;
+	top: 15%;
 	filter: contrast(115%);
 }
 
@@ -187,9 +171,8 @@ a:link, a:hover,a:visited, a:active, a {
 
 #about-button:hover {
 	background-color: none;
-	padding: 15px 45px;
+	padding: 12px 36px;
 	-webkit-transition: all 1.5s;
-	font-size: 1.5em;
 	font-weight: bolder;
 }
 
@@ -203,10 +186,9 @@ a:link, a:hover,a:visited, a:active, a {
 
 #collapse-button {
 	-webkit-transition: opacity 2.5s;
-	-webkit-transition: margin 1s;
 }
 
-#end-statement {
+#portfolio-header {
 	padding-top: 2em;
 }
 
@@ -216,7 +198,7 @@ a:link, a:hover,a:visited, a:active, a {
 .typewriter h1 {
   color: #fff;
   z-index: 2;
-  font-size: 1.5em;
+  font-size: 1.2em;
   font-family: monospace;
   overflow: hidden; /* Ensures the content is not revealed until the animation */
   border-right: .15em solid #EE5716; /* The typwriter cursor */
@@ -273,17 +255,6 @@ a:link, a:hover,a:visited, a:active, a {
 	height: 50vh;
 }
 /*-------------------------------------------------*/
-@media screen and (max-width: 414px){
-	#about-rectangle {
-		height: 200vh;
-	}
-	#experience-rectangle {
-		height: 170vh;
-	}
-	#projects-rectangle {
-		height: 120vh;
-	}		
-}
 
 @media screen and (min-width: 768px) {
 	#about-rectangle {
@@ -327,10 +298,10 @@ a:link, a:hover,a:visited, a:active, a {
 		height: 90vh;
 	}
 	#projects-rectangle {
-		height: 70vh;
+		height: 60vh;
 	}
 	#contact-rectangle {
-		height: 30vh;
+		height: 40vh;
 	}
 	#ttd-picture {
 		max-width: 500px;
@@ -351,14 +322,6 @@ a:link, a:hover,a:visited, a:active, a {
 		height: 15em;
 		width: 15em;
 	}
-	#about-button {
-		padding: 15px 45px;
-		font-size: 1.5em;
-	}
-	#about-button:hover {
-		padding: 22px 67px;
-		font-size: 2em;
-	}
 }
 
 @media screen and (min-width: 1440px) {
@@ -366,10 +329,10 @@ a:link, a:hover,a:visited, a:active, a {
 		height: 120vh;
 	}
 	#projects-rectangle {
-		height: 70vh;
+		height: 55vh;
 	}
 	#experience-rectangle {
-		height: 100vh;
+		height: 80vh;
 	}
 	#contact-rectangle {
 		height: 40vh;
@@ -385,15 +348,12 @@ a:link, a:hover,a:visited, a:active, a {
 	}
 	.card-body {
 		font-size: 1.3em;
-	}	
-	.section-header {
-		margin-top: 4em;
-	}
+	}		
 }
 
 @media screen and (min-width: 2560px) {
 	.nav-link {
-		font-size: 2em;
+		font-size: 1.8em;
 	}
 	#logo {
 		height: 25em;
@@ -417,34 +377,13 @@ a:link, a:hover,a:visited, a:active, a {
 		font-size: 3em;
 	}
 	#about-rectangle {
-		height: 160vh;
+		height: 100vh;
 	}
 	#experience-rectangle {
-		height: 150vh;
-	}
-	#projects-rectangle {
-		height: 110vh;
-	}
-	#contact-rectangle {
-		height: 50vh;
+		height: 90vh;
 	}
 	h2 {
 		font-size: 3em;
-	}
-	.section-header {
-		margin-top: 8em;
-	}
-	#about-button {
-		padding: 44px 134px;
-		font-size: 3em;
-	}
-	#about-button:hover {
-		padding: 66px 201px;
-		font-size: 4em;
-	}		
-	.custom-border {
-		height: 140px;
-		width: 70%;
 	}
 }
 
