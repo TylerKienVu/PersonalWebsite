@@ -317,10 +317,10 @@ a:link {
 
 @media screen and (min-width: 1440px) {
 	#about-rectangle {
-		height: 100vh;
+		height: 120vh;
 	}
 	#projects-rectangle {
-		height: 50vh;
+		height: 55vh;
 	}
 	#experience-rectangle {
 		height: 80vh;
