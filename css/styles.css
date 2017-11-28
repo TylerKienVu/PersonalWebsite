@@ -45,6 +45,13 @@ nav {
 	position: relative;
 	top: 10%;
 	margin-bottom: 10em;
+	width: 60vw;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.card-header {
+	text-align: center;
 }
 
 .info-heading {
@@ -108,6 +115,16 @@ nav {
 }
 .top-margin {
 	margin-top: 10em;
+}
+
+.nav-item a.active i{
+    color: #EE5716 !important;
+    -webkit-transition: color 1s;
+}
+
+.nav-item a{
+	color: white !important;
+    -webkit-transition: color 1s;	
 }
 
 #logo {
