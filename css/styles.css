@@ -141,6 +141,85 @@ nav {
 	top: 15%;
 }
 
+#button-container {
+	position: absolute;
+	width: 100%;
+	top: 60%;
+	z-index: 2;
+	text-align: center;
+	-webkit-transition:opacity 2.5s;
+}
+
+a:link {
+	color: #3495E8;
+}
+
+#about-button {
+	color: white;
+	border-width: medium;
+}
+
+/*----------------------------------------------------*/
+/*source: https://css-tricks.com/snippets/css/typewriter-effect/*/
+/*Typewriter effect*/
+.typewriter h1 {
+  color: #fff;
+  z-index: 2;
+  font-size: 1.5em;
+  font-family: monospace;
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: .15em solid orange; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: .15em; /* Adjust as needed */
+}
+
+/* The typing effect */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: orange }
+}
+
+.short-type-animation {
+	animation: 
+    	typing 0.2s steps(20, end),
+    	blink-caret .5s step-end infinite;
+}
+.medium-type-animation {
+	animation: 
+    	typing 1.5s steps(20, end),
+    	blink-caret .5s step-end infinite;	
+}
+.long-type-animation {
+	animation: 
+    	typing 2s steps(20, end),
+    	blink-caret .5s step-end infinite;		
+}
+.intro {
+	position: absolute;
+	z-index: 2;
+}
+
+#intro-part-1 {
+	top: 35%;
+	left: 45%;	
+}
+#intro-part-2 {
+	top: 40%;
+	left: 20%;
+}
+#intro-part-3 {
+	top: 45%;
+	left: 5%;
+}
+/*-------------------------------------------------*/
+
 @media screen and (min-width: 768px) {
 	#about-rectangle {
 		height: 185vh;
