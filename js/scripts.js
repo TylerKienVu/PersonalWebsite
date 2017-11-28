@@ -3,6 +3,16 @@ $(document).ready(function(){
 	$(function() {
         $('.lazy').Lazy();
     });
+	function isScrolledIntoView(elem)
+	{
+	    var docViewTop = $(window).scrollTop();
+	    var docViewBottom = docViewTop + $(window).height();
+
+	    var elemTop = $(elem).offset().top;
+	    var elemBottom = elemTop + $(elem).height();
+
+	    return ((elemBottom <= docViewBottom) && (elemTop >= docViewTop));
+	}	    
     //source for smooth scrolling: https://www.w3schools.com/jquery/tryit.asp?filename=tryjquery_eff_animate_smoothscroll
 	// Add smooth scrolling to all links
 	$("li a, #about-button").on('click', function(event) {
@@ -33,16 +43,82 @@ $(document).ready(function(){
 	        $("nav").addClass("bg-custom");
 	        $("#collapse-button").removeClass("mt-3");
 	        $("#collapse-button").removeClass("mr-3");
+	        $("#about-me-header").removeClass("no-opacity");
 	    } else {
 	        $("nav").removeClass("bg-custom");
 	       	$("#collapse-button").addClass("mt-3");
 	        $("#collapse-button").addClass("mr-3");
 	    }
+	    if (isScrolledIntoView("#about-me-header")){
+	    	$("#about-me-header").removeClass("no-opacity");
+	    }
+	    else {
+	    	$("#about-me-header").addClass("no-opacity");
+	    }
+	    if (isScrolledIntoView("#profile-picture")){
+	    	$("#profile-picture").removeClass("no-opacity");
+	    }	 
+	    else {
+	    	$("#profile-picture").addClass("no-opacity");
+	    }
+	    if (isScrolledIntoView("#who")){
+	    	$("#who").removeClass("no-opacity");
+	    }
+	    else {
+	    	$("#who").addClass("no-opacity");
+	    }
+	    if (isScrolledIntoView("#passion")){
+	    	$("#passion").removeClass("no-opacity");
+	    }
+	    else {
+	    	$("#passion").addClass("no-opacity");
+	    }
+	    if (isScrolledIntoView("#education")){
+	    	$("#education").removeClass("no-opacity");
+	    }	
+	    else {
+	    	$("#education").addClass("no-opacity");
+	    }
+	    if (isScrolledIntoView("#projects-section-header")){
+	    	$("#projects-section-header").removeClass("no-opacity");
+	    }		 
+	    else {
+	    	$("#projects-section-header").addClass("no-opacity");
+	    }
+	    if (isScrolledIntoView("#github-border")){
+	    	$("#github-border").removeClass("no-opacity");
+	    }		
+	    else {
+	    	$("#github-border").addClass("no-opacity");
+	    }
+	    if (isScrolledIntoView("#experience-section-header")){
+	    	$("#experience-section-header").removeClass("no-opacity");
+	    }		               	    	 
+	    else {
+	    	$("#experience-section-header").addClass("no-opacity");
+	    }
+	    if (isScrolledIntoView("#ttd-border")){
+	    	$("#ttd-border").removeClass("no-opacity");
+	    }	
+	    else {
+	    	$("#ttd-border").addClass("no-opacity");
+	    }
+	    if (isScrolledIntoView("#resume-statement")){
+	    	$("#resume-statement").removeClass("no-opacity");
+	    }	  
+	   	else {
+	   		$("#resume-statement").addClass("no-opacity");
+	   	}
+	    if (isScrolledIntoView("#email-statement")){
+	    	$("#email-statement").removeClass("no-opacity");
+	    }	      	          
+	    else {
+	    	$("#email-statement").addClass("no-opacity");
+	    }
 	});
 });
 
 function startAnimation() {
-	console.log("hit");
 	setTimeout(function() {
 		$('#collapse-button').removeClass('no-opacity');
 	}, 1000);
@@ -84,6 +160,20 @@ function startAnimation() {
 		$('#intro-part-3 h1').addClass('medium-type-animation');
 	}, 11000);		
 	setTimeout(function() {
+		$('#intro-part-3 h1').addClass('delete-animation');		
+	}, 14000);	
+	setTimeout(function() {
+		$('#intro-part-3 h1').text("I")
+	}, 15000);	
+	setTimeout(function() {
+		$('#intro-part-3 h1').text("I love to code.")
+		$('#intro-part-3 h1').addClass('retype-animation');		
+	}, 16000);		
+	setTimeout(function() {
+		$('#intro-part-3 h1').text("I love to code. Hire me pls.")
+		$('#intro-part-3 h1').addClass('type-ending-animation');		
+	}, 21000);	
+	setTimeout(function() {
 		$("#button-container").removeClass("no-opacity");
-	}, 14000)
+	}, 19000)
 }

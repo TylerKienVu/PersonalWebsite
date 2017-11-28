@@ -39,6 +39,7 @@ nav {
 	margin-left: auto;
 	margin-right: auto;
 	margin-bottom: 3em;
+	-webkit-transition: all 1.5s;		
 }
 
 .info-box {
@@ -54,8 +55,13 @@ nav {
 	text-align: center;
 }
 
+.card-body {
+	text-align: center;
+}
+
 .info-heading {
 	color: black;
+	-webkit-transition: all 1.5s;	
 }
 
 .center-img-container {
@@ -96,6 +102,7 @@ nav {
 	width: 70%;
 	border: 3px solid #EE5716;
 	border-radius: 16px;
+	-webkit-transition: all 1.5s;		
 }
 
 .link-container {
@@ -109,6 +116,7 @@ nav {
 	margin-top: 2em;
 	text-align: center;
 	color: #EE5716;
+	-webkit-transition: all 1.5s;
 }
 .no-bottom-margin {
 	margin-bottom: 0;
@@ -194,6 +202,7 @@ nav {
 	filter: contrast(115%);
 	margin-top: 5em;
 	margin-bottom: 5em;
+	-webkit-transition:all 1.5s;	
 }
 
 #button-container {
@@ -261,6 +270,23 @@ a:link, a:hover,a:visited, a:active, a {
   50% { border-color: #EE5716 }
 }
 
+/* Delete effect */
+@keyframes delete {
+	from { width: 100% }
+	to { width: 5% }
+}
+
+/* Retype effect */
+@keyframes retype {
+	from { width: 10% }
+	to { width: 100% }
+}
+
+@keyframes type-end {
+	from { width: 60% }
+	to { width : 100% }
+}
+
 .short-type-animation {
 	animation: 
     	typing 0.2s steps(20, end),
@@ -271,10 +297,20 @@ a:link, a:hover,a:visited, a:active, a {
     	typing 1.5s steps(20, end),
     	blink-caret .5s step-end infinite;	
 }
-.long-type-animation {
+.delete-animation {
 	animation: 
-    	typing 2s steps(20, end),
-    	blink-caret .5s step-end infinite;		
+		delete 1s steps(20, end),
+		blink-caret .5s step-end infinite;
+}
+.retype-animation{
+	animation: 
+		retype 1.5s steps(20, end),
+		blink-caret .5s step-end infinite;
+}
+.type-ending-animation{
+	animation: 
+		type-end 1s steps(20,end),
+		blink-caret .5s step-end infinite;
 }
 .intro {
 	position: absolute;
