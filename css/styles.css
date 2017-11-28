@@ -64,11 +64,17 @@ nav {
 	width: 100%;
 	height: 100%;
 	border-radius: 50%;
-	border:1px solid black;
+	border:2px solid black;
 }
 
 .bg-custom {
 	background-color: black;
+}
+
+.centered-axis-x {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 0);
 }
 
 #logo {
@@ -80,24 +86,24 @@ nav {
 }
 
 #landing-img {
-	filter: brightness(20%);;
+	filter: brightness(20%);
 	width: 100%;
 	height: 100%;
 	z-index: 1;
 	object-fit: cover;
-	-webkit-transition:opacity 2s;
+	-webkit-transition:all 2s;
 }
 
 #about-rectangle {
-	height: 170vh;
+	height: 135vh;
 }
 
 #projects-rectangle {
-	height: 90vh;
+	height: 80vh;
 }
 
 #experience-rectangle {
-	height: 130vh;
+	height: 110vh;
 }
 
 #contact-rectangle {
@@ -143,14 +149,12 @@ nav {
 
 #profile-picture {
 	top: 15%;
+	filter: contrast(115%);
 }
 
 #button-container {
-	position: absolute;
-	width: 100%;
 	top: 60%;
 	z-index: 2;
-	text-align: center;
 	-webkit-transition: opacity 2.5s;
 }
 
@@ -165,6 +169,10 @@ a:link {
 
 #collapse-button {
 	-webkit-transition: opacity 2.5s;
+}
+
+#end-statement {
+	padding-top: 2em;
 }
 
 /*----------------------------------------------------*/
@@ -215,34 +223,34 @@ a:link {
 }
 
 #intro-part-1 {
-	top: 35%;
-	left: 45%;	
+	top: 25%;
 }
 #intro-part-2 {
-	top: 40%;
-	left: 20%;
+	top: 35%;
 }
 #intro-part-3 {
 	top: 45%;
-	left: 5%;
+}
+#intro-container {
+	z-index: 2;
+	width: 100vw;
+	top: 30%;
+	height: 50vh;
 }
 /*-------------------------------------------------*/
 
 @media screen and (min-width: 768px) {
 	#about-rectangle {
-		height: 150vh;
+		height: 110vh;
 	}
 	#projects-rectangle {
-		height: 70vh;
+		height: 60vh;
 	}
 	#experience-rectangle {
-		height: 120vh;
+		height: 90vh;
 	}
 	#contact-rectangle {
-		height: 55vh;
-	}
-	#end-statement {
-		padding-top: 2em;
+		height: 40vh;
 	}
 	.info-heading {
 		font-size: 1em;
@@ -256,18 +264,10 @@ a:link {
 	.nav-link {
 		font-size: 1em;
 	}
-	#intro-part-1 {
-		top: 35%;
-		left: 48%;	
+	#logo {
+		height: 13em;
+		width: 13em;
 	}
-	#intro-part-2 {
-		top: 40%;
-		left: 32%;
-	}
-	#intro-part-3 {
-		top: 45%;
-		left: 25%;
-	}	
 }
 
 @media screen and (min-width: 1024px) {
@@ -284,7 +284,7 @@ a:link {
 		height: 60vh;
 	}
 	#contact-rectangle {
-		height: 50vh;
+		height: 40vh;
 	}
 	#ttd-picture {
 		max-width: 500px;
@@ -293,7 +293,7 @@ a:link {
 		font-size: 2em;
 	}
 	.nav-link {
-		font-size: 1.2em;
+		font-size: 1.1em;
 	}
 	.info-heading {
 		font-size: 1.2em;
@@ -301,18 +301,10 @@ a:link {
 	.card-body {
 		font-size: 1.2em;
 	}
-	#intro-part-1 {
-		top: 35%;
-		left: 48%;	
+	#logo {
+		height: 15em;
+		width: 15em;
 	}
-	#intro-part-2 {
-		top: 40%;
-		left: 33%;
-	}
-	#intro-part-3 {
-		top: 45%;
-		left: 26%;
-	}	
 }
 
 @media screen and (min-width: 1440px) {
@@ -328,20 +320,8 @@ a:link {
 	#contact-rectangle {
 		height: 40vh;
 	}
-	#intro-part-1 {
-		top: 35%;
-		left: 48%;	
-	}
-	#intro-part-2 {
-		top: 40%;
-		left: 37%;
-	}
-	#intro-part-3 {
-		top: 45%;
-		left: 33%;
-	}	
 	.nav-link {
-		font-size: 1.3em;
+		font-size: 1.2em;
 	}	
 	.block-text {
 		font-size: 1.7em;
@@ -356,14 +336,15 @@ a:link {
 
 @media screen and (min-width: 2560px) {
 	.nav-link {
-		font-size: 2.5em;
+		font-size: 1.8em;
 	}
 	#logo {
-		height: 20em;
-		width: 20em;
+		height: 25em;
+		width: 25em;
 	}
 	.block-text {
 		font-size: 2.5em;
+		padding-top: 2em;
 	}
 	.info-heading {
 		font-size: 2em;
@@ -378,20 +359,11 @@ a:link {
 	.typewriter h1 {
 		font-size: 3em;
 	}
-	#intro-part-1 {
-		top: 35%;
-		left: 49%;	
-	}
-	#intro-part-2 {
-		top: 40%;
-		left: 40%;
-	}
-	#intro-part-3 {
-		top: 45%;
-		left: 35%;
-	}
 	#about-rectangle {
-		height: 120vh;
+		height: 100vh;
+	}
+	#experience-rectangle {
+		height: 90vh;
 	}
 	h2 {
 		font-size: 3em;

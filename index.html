@@ -6,9 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta author="Tyler Vu">
     <title>Personal Portfolio</title>
-	<link rel="shortcut icon" type="image/x-icon" href="content/black-logo.png" />
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+	<script src="https://code.jquery.com/jquery-3.2.1.min.js"
+	integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+	crossorigin="anonymous"></script>
+	<script src="js/jquery.lazy.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
 	<script src="https://use.fontawesome.com/f83b38ae27.js"></script>
+	<script src="js/scripts.js"></script>	
+	<link rel="shortcut icon" type="image/x-icon" href="content/black-logo.png" />
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">    
     <link href="css/styles.css" rel="stylesheet">
   </head>
   <body>
@@ -40,20 +47,22 @@
 	<div class="container-fluid">
 		<div  id="home" class="row">
 			<div class="rectangle">
-				<div id="intro-part-1" class="typewriter intro">
-					<h1 class="no-opacity">Hi.</h1>
-				</div>
-				<div id="intro-part-2" class="typewriter intro">
-					<h1 class="no-opacity">My name is Tyler Vu.</h1>
-				</div>	
-				<div id="intro-part-3" class="typewriter intro">
-					<h1 class="no-opacity">Let me tell you about myself.</h1>
-				</div>
-				<div id="button-container" class="no-opacity">
-					<a id="about-button" href="#about" class="btn btn-outline-warning btn-lg" role="button">My Story</a>
+				<div id="intro-container" class="centered-axis-x">
+					<div id="intro-part-1" class="typewriter intro centered-axis-x">
+						<h1 class="">Hi.</h1>
+					</div>
+					<div id="intro-part-2" class="typewriter intro centered-axis-x">
+						<h1 class="">My name is Tyler Vu.</h1>
+					</div>	
+					<div id="intro-part-3" class="typewriter intro centered-axis-x">
+						<h1 class="">Let me tell you about myself.</h1>
+					</div>
+					<div id="button-container" class="centered-axis-x">
+						<a id="about-button" href="#about" class="btn btn-outline-warning btn-lg" role="button">My Story</a>
+					</div>
 				</div>
 				<img id="logo" class="no-opacity" src="content/white-logo.png">
-				<img id="landing-img" src="content/background1.jpeg">
+				<img id="landing-img" class="lazy" data-src="content/background1.jpeg">
 			</div>
 		</div>
 		<div  id="about" class="row">
@@ -63,7 +72,7 @@
 				</p>
 				<div id="profile-picture" class="center-img-container">
 					<div class="small-img-container">
-						<img class="circle-img" src="content/profile-picture.jpg">
+						<img class="circle-img" src="content/profile.jpg">
 					</div>
 				</div>
 				<div id="accordion" class="info-box" role="tablist">
@@ -154,11 +163,5 @@
 			</div>
 		</div>						
 	</div>
-	<script src="https://code.jquery.com/jquery-3.2.1.min.js"
-	integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
-	crossorigin="anonymous"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
-    <script src="js/scripts.js"></script>
   </body>
 </html>

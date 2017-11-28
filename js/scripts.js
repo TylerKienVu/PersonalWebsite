@@ -1,5 +1,8 @@
 $(document).ready(function(){
 	window.addEventListener("load", startAnimation);
+	$(function() {
+        $('.lazy').Lazy();
+    });
     //source for smooth scrolling: https://www.w3schools.com/jquery/tryit.asp?filename=tryjquery_eff_animate_smoothscroll
 	// Add smooth scrolling to all links
 	$("li a, #about-button").on('click', function(event) {
@@ -35,6 +38,7 @@ $(document).ready(function(){
 });
 
 function startAnimation() {
+	console.log("hit");
 	setTimeout(function() {
 		$('#collapse-button').removeClass('no-opacity');
 	}, 2000);
@@ -56,6 +60,9 @@ function startAnimation() {
 	setTimeout(function() {
 		$('#logo').removeClass('no-opacity');
 	}, 4000);
+	setTimeout(function() {
+		$('#landing-img').css('filter','brightness(5%)');
+	}, 4500);
 	setTimeout(function() {
 		$('#intro-part-1 h1').removeClass('no-opacity');
 		$('#intro-part-1 h1').addClass('short-type-animation');
