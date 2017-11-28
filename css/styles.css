@@ -14,7 +14,8 @@ nav {
 
 .rectangle {
 	width: 100%;
-	height: 100vh;
+	overflow: auto;
+	padding-bottom: 15vh;
 }
 
 .no-opacity {
@@ -35,11 +36,15 @@ nav {
 	font-size: 1.3em;
 	padding-left: 1em;
 	padding-right: 1em;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 3em;
 }
 
 .info-box {
 	position: relative;
 	top: 10%;
+	margin-bottom: 10em;
 }
 
 .info-heading {
@@ -89,7 +94,6 @@ nav {
 .link-container {
 	top: 5%;	
 	margin-top: 1em;
-	margin-bottom: 7em;
 }
 
 .section-header {
@@ -98,6 +102,12 @@ nav {
 	margin-top: 2em;
 	text-align: center;
 	color: #EE5716;
+}
+.no-bottom-margin {
+	margin-bottom: 0;
+}
+.top-margin {
+	margin-top: 10em;
 }
 
 #logo {
@@ -117,20 +127,12 @@ nav {
 	-webkit-transition:all 2s;
 }
 
-#about-rectangle {
-	height: 170vh;
-}
-
-#projects-rectangle {
+#home-rectangle {
 	height: 100vh;
-}
-
-#experience-rectangle {
-	height: 140vh;
+	padding-bottom: 0;
 }
 
 #contact-rectangle {
-	height: 50vh;
 	color: white;
 	text-align: center;
 	font-size: 1em;
@@ -173,6 +175,8 @@ nav {
 #profile-picture {
 	top: 7%;
 	filter: contrast(115%);
+	margin-top: 5em;
+	margin-bottom: 5em;
 }
 
 #button-container {
@@ -199,6 +203,8 @@ a:link, a:hover,a:visited, a:active, a {
 	border-color: #EE5716;
 	-webkit-transition: all 1.5s;
 	padding: 10px 30px;
+	max-width: 70vw;
+	font-size: 4vw;
 }
 
 #collapse-button {
@@ -210,13 +216,14 @@ a:link, a:hover,a:visited, a:active, a {
 	padding-top: 2em;
 }
 
+
 /*----------------------------------------------------*/
 /*source: https://css-tricks.com/snippets/css/typewriter-effect/*/
 /*Typewriter effect*/
 .typewriter h1 {
   color: #fff;
   z-index: 2;
-  font-size: 1.5em;
+  font-size: 4vw;
   font-family: monospace;
   overflow: hidden; /* Ensures the content is not revealed until the animation */
   border-right: .15em solid #EE5716; /* The typwriter cursor */
@@ -273,31 +280,21 @@ a:link, a:hover,a:visited, a:active, a {
 	height: 50vh;
 }
 /*-------------------------------------------------*/
-@media screen and (max-width: 414px){
-	#about-rectangle {
-		height: 200vh;
+@media screen and (max-width: 320px) {
+	#ttd-border{
+		width: 80%;
 	}
-	#experience-rectangle {
-		height: 170vh;
-	}
-	#projects-rectangle {
-		height: 120vh;
-	}		
+	#about-button {
+		padding: 5px 5px;
+		font-size: 0.9em;
+	}	
+	#logo {
+		height: 5em;
+		width: 5em;
+	}	
 }
 
 @media screen and (min-width: 768px) {
-	#about-rectangle {
-		height: 110vh;
-	}
-	#projects-rectangle {
-		height: 60vh;
-	}
-	#experience-rectangle {
-		height: 90vh;
-	}
-	#contact-rectangle {
-		height: 40vh;
-	}
 	.info-heading {
 		font-size: 1em;
 	}
@@ -319,18 +316,7 @@ a:link, a:hover,a:visited, a:active, a {
 @media screen and (min-width: 1024px) {
 	.block-text {
 		font-size: 1.5em;
-	}
-	#about-rectangle {
-		height: 120vh;
-	}
-	#experience-rectangle {
-		height: 90vh;
-	}
-	#projects-rectangle {
-		height: 70vh;
-	}
-	#contact-rectangle {
-		height: 30vh;
+		width: 70%;
 	}
 	#ttd-picture {
 		max-width: 500px;
@@ -351,29 +337,21 @@ a:link, a:hover,a:visited, a:active, a {
 		height: 15em;
 		width: 15em;
 	}
-	#about-button {
-		padding: 15px 45px;
-		font-size: 1.5em;
-	}
 	#about-button:hover {
-		padding: 22px 67px;
-		font-size: 2em;
+		background-color: none;
+		padding: 12px 36px;
+		-webkit-transition: all 1.5s;
+		font-weight: bolder;
+	}	
+	#about-button {
+		font-size: 2vw;
+	}
+	.typewriter h1 {
+	  font-size: 2vw;
 	}
 }
 
 @media screen and (min-width: 1440px) {
-	#about-rectangle {
-		height: 120vh;
-	}
-	#projects-rectangle {
-		height: 70vh;
-	}
-	#experience-rectangle {
-		height: 100vh;
-	}
-	#contact-rectangle {
-		height: 40vh;
-	}
 	.nav-link {
 		font-size: 1.2em;
 	}	
@@ -415,18 +393,6 @@ a:link, a:hover,a:visited, a:active, a {
 	}
 	.typewriter h1 {
 		font-size: 3em;
-	}
-	#about-rectangle {
-		height: 160vh;
-	}
-	#experience-rectangle {
-		height: 150vh;
-	}
-	#projects-rectangle {
-		height: 110vh;
-	}
-	#contact-rectangle {
-		height: 50vh;
 	}
 	h2 {
 		font-size: 3em;
