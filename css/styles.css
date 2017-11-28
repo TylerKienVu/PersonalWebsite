@@ -67,6 +67,10 @@ nav {
 	border:1px solid black;
 }
 
+.bg-custom {
+	background-color: black;
+}
+
 #logo {
 	position: absolute;
 	height:10em;
@@ -147,7 +151,7 @@ nav {
 	top: 60%;
 	z-index: 2;
 	text-align: center;
-	-webkit-transition:opacity 2.5s;
+	-webkit-transition: opacity 2.5s;
 }
 
 a:link {
@@ -157,6 +161,10 @@ a:link {
 #about-button {
 	color: white;
 	border-width: medium;
+}
+
+#collapse-button {
+	-webkit-transition: opacity 2.5s;
 }
 
 /*----------------------------------------------------*/
@@ -222,13 +230,13 @@ a:link {
 
 @media screen and (min-width: 768px) {
 	#about-rectangle {
-		height: 185vh;
+		height: 150vh;
 	}
 	#projects-rectangle {
-		height: 95vh;
+		height: 70vh;
 	}
 	#experience-rectangle {
-		height: 130vh;
+		height: 120vh;
 	}
 	#contact-rectangle {
 		height: 55vh;
@@ -237,17 +245,29 @@ a:link {
 		padding-top: 2em;
 	}
 	.info-heading {
-		font-size: 1.3em;
+		font-size: 1em;
 	}
 	.card-body {
-		font-size: 1.3em;
+		font-size: 1em;
 	}
 	.block-text {
-		font-size: 1.5em;
+		font-size: 1.3em;
 	}
 	.nav-link {
 		font-size: 1em;
 	}
+	#intro-part-1 {
+		top: 35%;
+		left: 48%;	
+	}
+	#intro-part-2 {
+		top: 40%;
+		left: 32%;
+	}
+	#intro-part-3 {
+		top: 45%;
+		left: 25%;
+	}	
 }
 
 @media screen and (min-width: 1024px) {
@@ -255,40 +275,88 @@ a:link {
 		font-size: 1.5em;
 	}
 	#about-rectangle {
-		height: 160vh;
-	}
-	#experience-rectangle {
 		height: 120vh;
 	}
+	#experience-rectangle {
+		height: 90vh;
+	}
 	#projects-rectangle {
-		height: 80vh;
+		height: 60vh;
 	}
 	#contact-rectangle {
 		height: 50vh;
 	}
 	#ttd-picture {
 		max-width: 500px;
+	}	
+	.typewriter h1 {
+		font-size: 2em;
 	}
+	.nav-link {
+		font-size: 1.2em;
+	}
+	.info-heading {
+		font-size: 1.2em;
+	}
+	.card-body {
+		font-size: 1.2em;
+	}
+	#intro-part-1 {
+		top: 35%;
+		left: 48%;	
+	}
+	#intro-part-2 {
+		top: 40%;
+		left: 33%;
+	}
+	#intro-part-3 {
+		top: 45%;
+		left: 26%;
+	}	
 }
 
 @media screen and (min-width: 1440px) {
 	#about-rectangle {
-		height: 120vh;
+		height: 100vh;
 	}
 	#projects-rectangle {
-		height: 60vh;
+		height: 50vh;
 	}
 	#experience-rectangle {
-		height: 90vh;
+		height: 80vh;
 	}
 	#contact-rectangle {
 		height: 40vh;
 	}
+	#intro-part-1 {
+		top: 35%;
+		left: 48%;	
+	}
+	#intro-part-2 {
+		top: 40%;
+		left: 37%;
+	}
+	#intro-part-3 {
+		top: 45%;
+		left: 33%;
+	}	
+	.nav-link {
+		font-size: 1.3em;
+	}	
+	.block-text {
+		font-size: 1.7em;
+	}	
+	.info-heading {
+		font-size: 1.3em;
+	}
+	.card-body {
+		font-size: 1.3em;
+	}		
 }
 
 @media screen and (min-width: 2560px) {
 	.nav-link {
-		font-size: 2.2em;
+		font-size: 2.5em;
 	}
 	#logo {
 		height: 20em;
@@ -306,6 +374,27 @@ a:link {
 	.small-img-container {
 		height: 350px;
 		width: 350px;
+	}
+	.typewriter h1 {
+		font-size: 3em;
+	}
+	#intro-part-1 {
+		top: 35%;
+		left: 49%;	
+	}
+	#intro-part-2 {
+		top: 40%;
+		left: 40%;
+	}
+	#intro-part-3 {
+		top: 45%;
+		left: 35%;
+	}
+	#about-rectangle {
+		height: 120vh;
+	}
+	h2 {
+		font-size: 3em;
 	}
 }
 
