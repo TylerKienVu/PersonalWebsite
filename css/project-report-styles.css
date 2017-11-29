@@ -54,13 +54,7 @@ nav {
 	position: relative;
 	top: 10%;
 	margin-bottom: 10em;
-}
-
-.info-box {
-	position: relative;
-	top: 10%;
-	margin-bottom: 10em;
-	width: 60vw;
+	width: 100vw;
 	margin-left: auto;
 	margin-right: auto;
 }
@@ -345,6 +339,9 @@ a:link, a:hover,a:visited, a:active, a {
 	}
 	.typewriter h1 {
 	  font-size: 2vw;
+	}
+	.info-box {
+		width: 80vh;
 	}
 }
 
