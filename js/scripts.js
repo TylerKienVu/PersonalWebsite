@@ -1,18 +1,6 @@
 $(document).ready(function(){
 	window.addEventListener("load", startAnimation);
-	$(function() {
-        $('.lazy').Lazy();
-    });
-	function isScrolledIntoView(elem)
-	{
-	    var docViewTop = $(window).scrollTop();
-	    var docViewBottom = docViewTop + $(window).height();
-
-	    var elemTop = $(elem).offset().top;
-	    var elemBottom = elemTop + $(elem).height();
-
-	    return ((elemBottom <= docViewBottom) && (elemTop >= docViewTop));
-	}	    
+    $('.lazy').Lazy();	    
     //source for smooth scrolling: https://www.w3schools.com/jquery/tryit.asp?filename=tryjquery_eff_animate_smoothscroll
 	// Add smooth scrolling to all links
 	$("li a, #about-button").on('click', function(event) {
@@ -36,6 +24,21 @@ $(document).ready(function(){
 		  });
 		} // End if
 	});
+	$(".skill").click(function(event) {
+		//unhide other skill if hidden
+		$(".skill[hidden]").removeAttr("hidden");
+		//grab skill div
+		var skill = $(this).outerHTML();
+		$(this).attr("hidden","");
+
+		//place skill in description div
+		$("#skill-description").html(skill);
+		$("#skill-description > .skill").css({height:"10em",width:"10em"});
+		var detailString = $("#skill-description > .skill > .details").html();
+		var pElement = "<p class='details'>" + detailString + "</p>"
+		$("#skill-description").append(pElement);
+
+	});
 	$(window).scroll(function() {    
 	    var scroll = $(window).scrollTop();
 
@@ -58,9 +61,6 @@ $(document).ready(function(){
 	    if (isScrolledIntoView("#profile-picture")){
 	    	$("#profile-picture").removeClass("no-opacity");
 	    }	 
-	    else {
-	    	$("#profile-picture").addClass("no-opacity");
-	    }
 	    if (isScrolledIntoView("#who")){
 	    	$("#who").removeClass("no-opacity");
 	    }
@@ -78,6 +78,12 @@ $(document).ready(function(){
 	    }	
 	    else {
 	    	$("#education").addClass("no-opacity");
+	    }
+	    if (isScrolledIntoView("#skills")){
+	    	$("#skills").removeClass("no-opacity");
+	    }	    
+	    else {
+	    	$("#skills").addClass("no-opacity");
 	    }
 	    if (isScrolledIntoView("#projects-section-header")){
 	    	$("#projects-section-header").removeClass("no-opacity");
@@ -117,6 +123,21 @@ $(document).ready(function(){
 	    }
 	});
 });
+
+function isScrolledIntoView(elem)
+{
+    var docViewTop = $(window).scrollTop();
+    var docViewBottom = docViewTop + $(window).height();
+
+    var elemTop = $(elem).offset().top;
+    var elemBottom = elemTop + $(elem).height();
+
+    return ((elemBottom <= docViewBottom) && (elemTop >= docViewTop));
+}
+
+jQuery.fn.outerHTML = function() {
+   return (this[0]) ? this[0].outerHTML : '';  
+};
 
 function startAnimation() {
 	setTimeout(function() {
