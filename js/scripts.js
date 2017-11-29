@@ -73,6 +73,12 @@ $(document).ready(function(){
 	    else {
 	    	$("#passion").addClass("no-opacity");
 	    }
+	    if (isScrolledIntoView("#collaboration")){
+	    	$("#collaboration").removeClass("no-opacity");
+	    }
+	    else {
+	    	$("#collaboration").addClass("no-opacity");
+	    }	    
 	    if (isScrolledIntoView("#education")){
 	    	$("#education").removeClass("no-opacity");
 	    }	
