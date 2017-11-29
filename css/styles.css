@@ -135,6 +135,11 @@ nav {
     -webkit-transition: color 1s;	
 }
 
+.btn:focus,.btn:active {
+   outline: none !important;
+   box-shadow: none;
+}
+
 #logo {
 	position: absolute;
 	height:10em;
