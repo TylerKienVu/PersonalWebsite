@@ -215,14 +215,6 @@ a:link, a:hover,a:visited, a:active, a {
 	color: #EE5716;
 }
 
-#about-button:hover {
-	background-color: none;
-	padding: 15px 45px;
-	-webkit-transition: all 1.5s;
-	font-size: 1.5em;
-	font-weight: bolder;
-}
-
 #about-button {
 	color: white;
 	border-width: medium;
@@ -392,9 +384,8 @@ a:link, a:hover,a:visited, a:active, a {
 	}
 	#about-button:hover {
 		background-color: none;
-		padding: 12px 36px;
 		-webkit-transition: all 1.5s;
-		font-weight: bolder;
+		font-size: 2.5vw;
 	}	
 	#about-button {
 		font-size: 2vw;
@@ -452,14 +443,6 @@ a:link, a:hover,a:visited, a:active, a {
 	}
 	.section-header {
 		margin-top: 8em;
-	}
-	#about-button {
-		padding: 44px 134px;
-		font-size: 3em;
-	}
-	#about-button:hover {
-		padding: 66px 201px;
-		font-size: 4em;
 	}		
 	.custom-border {
 		height: 140px;
