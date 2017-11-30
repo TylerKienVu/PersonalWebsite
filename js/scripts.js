@@ -37,8 +37,29 @@ $(document).ready(function(){
 		var detailString = $("#skill-description > .skill > .details").html();
 		var pElement = "<p class='details'>" + detailString + "</p>"
 		$("#skill-description").append(pElement);
+		$('[data-spy="scroll"]').each(function () {
+		  var $spy = $(this).scrollspy('refresh')
+		})		
 
 	});
+	$(".work").click(function(event) {
+		//unhide other work if hidden
+		$(".work[hidden]").removeAttr("hidden");
+		//grab work div
+		var work = $(this).outerHTML();
+		$(this).attr("hidden","");
+
+		//place work in description div
+		$("#work-description").html(work);
+		$("#work-description > .work > .work-img-container").css({height:"10em",width:"10em"});
+		$("#work-description > .work > .details").removeAttr("hidden");
+		$("#work-description > .work > .date").removeAttr("hidden");		
+		$("#work-description > .work > .work-title").removeAttr("hidden");		
+		$('[data-spy="scroll"]').each(function () {
+		  var $spy = $(this).scrollspy('refresh')
+		})		
+
+	});	
 	$(window).scroll(function() {    
 	    var scroll = $(window).scrollTop();
 
@@ -55,78 +76,42 @@ $(document).ready(function(){
 	    if (isScrolledIntoView("#about-me-header")){
 	    	$("#about-me-header").removeClass("no-opacity");
 	    }
-	    else {
-	    	$("#about-me-header").addClass("no-opacity");
-	    }
 	    if (isScrolledIntoView("#profile-picture")){
 	    	$("#profile-picture").removeClass("no-opacity");
 	    }	 
-	    if (isScrolledIntoView("#who")){
-	    	$("#who").removeClass("no-opacity");
-	    }
-	    else {
-	    	$("#who").addClass("no-opacity");
-	    }
-	    if (isScrolledIntoView("#passion")){
-	    	$("#passion").removeClass("no-opacity");
-	    }
-	    else {
-	    	$("#passion").addClass("no-opacity");
-	    }
-	    if (isScrolledIntoView("#collaboration")){
-	    	$("#collaboration").removeClass("no-opacity");
-	    }
-	    else {
-	    	$("#collaboration").addClass("no-opacity");
-	    }	    
-	    if (isScrolledIntoView("#education")){
-	    	$("#education").removeClass("no-opacity");
-	    }	
-	    else {
-	    	$("#education").addClass("no-opacity");
-	    }
-	    if (isScrolledIntoView("#skills")){
-	    	$("#skills").removeClass("no-opacity");
-	    }	    
-	    else {
-	    	$("#skills").addClass("no-opacity");
-	    }
+	    // if (isScrolledIntoView("#who")){
+	    // 	$("#who").removeClass("no-opacity");
+	    // }
+	    // if (isScrolledIntoView("#passion")){
+	    // 	$("#passion").removeClass("no-opacity");
+	    // }
+	    // if (isScrolledIntoView("#collaboration")){
+	    // 	$("#collaboration").removeClass("no-opacity");
+	    // }    
+	    // if (isScrolledIntoView("#education")){
+	    // 	$("#education").removeClass("no-opacity");
+	    // }	
+	    // if (isScrolledIntoView("#skills")){
+	    // 	$("#skills").removeClass("no-opacity");
+	    // }	    
 	    if (isScrolledIntoView("#projects-section-header")){
 	    	$("#projects-section-header").removeClass("no-opacity");
 	    }		 
-	    else {
-	    	$("#projects-section-header").addClass("no-opacity");
-	    }
 	    if (isScrolledIntoView("#github-border")){
 	    	$("#github-border").removeClass("no-opacity");
 	    }		
-	    else {
-	    	$("#github-border").addClass("no-opacity");
-	    }
 	    if (isScrolledIntoView("#experience-section-header")){
 	    	$("#experience-section-header").removeClass("no-opacity");
 	    }		               	    	 
-	    else {
-	    	$("#experience-section-header").addClass("no-opacity");
-	    }
-	    if (isScrolledIntoView("#ttd-border")){
-	    	$("#ttd-border").removeClass("no-opacity");
-	    }	
-	    else {
-	    	$("#ttd-border").addClass("no-opacity");
-	    }
-	    if (isScrolledIntoView("#resume-statement")){
-	    	$("#resume-statement").removeClass("no-opacity");
-	    }	  
-	   	else {
-	   		$("#resume-statement").addClass("no-opacity");
-	   	}
-	    if (isScrolledIntoView("#email-statement")){
-	    	$("#email-statement").removeClass("no-opacity");
-	    }	      	          
-	    else {
-	    	$("#email-statement").addClass("no-opacity");
-	    }
+	    // if (isScrolledIntoView("#ttd-border")){
+	    // 	$("#ttd-border").removeClass("no-opacity");
+	    // }	
+	    // if (isScrolledIntoView("#resume-statement")){
+	    // 	$("#resume-statement").removeClass("no-opacity");
+	    // }	 
+	    // if (isScrolledIntoView("#contact-section-header")){
+	    // 	$("#contact-section-header").removeClass("no-opacity");
+	    // }	     	      	          
 	});
 });
 
@@ -148,59 +133,71 @@ jQuery.fn.outerHTML = function() {
 function startAnimation() {
 	setTimeout(function() {
 		$('#collapse-button').removeClass('no-opacity');
-	}, 1000);
+	}, 500);
 	setTimeout(function() {
 		$('.navbar-nav li:nth-child(1)').removeClass('no-opacity');
-	}, 1000);
+	}, 600);
 	setTimeout(function() {
 		$('.navbar-nav li:nth-child(2)').removeClass('no-opacity');
-	}, 1400);
+	}, 700);
 	setTimeout(function() {
 		$('.navbar-nav li:nth-child(3)').removeClass('no-opacity');
-	}, 1800);
+	}, 800);
 	setTimeout(function() {
 		$('.navbar-nav li:nth-child(4)').removeClass('no-opacity');
-	}, 2200);
+	}, 900);
 	setTimeout(function() {
 		$('.navbar-nav li:nth-child(5)').removeClass('no-opacity');
-	}, 2600);
+	}, 1000);
 	setTimeout(function() {
 		$('#logo').removeClass('no-opacity');
-	}, 3000);
+	}, 500);
 	setTimeout(function() {
 		$('#landing-img').css('filter','brightness(5%)');
-	}, 4000);
+	}, 1000);
 	setTimeout(function() {
 		$('#intro-part-1 h1').removeClass('no-opacity');
 		$('#intro-part-1 h1').addClass('short-type-animation');
-	}, 6000);
+	}, 1200);
 	setTimeout(function() {
 		$("#intro-part-1 h1").css('border',"none");		
 		$("#intro-part-1 h1").css('animation',"default");		
 		$('#intro-part-2 h1').removeClass('no-opacity');
 		$('#intro-part-2 h1').addClass('medium-type-animation');
-	}, 8000);	
+	}, 2000);	
 	setTimeout(function() {
 		$("#intro-part-2 h1").css('border',"none");		
 		$("#intro-part-2 h1").css('animation',"default");	
 		$('#intro-part-3 h1').removeClass('no-opacity');
 		$('#intro-part-3 h1').addClass('medium-type-animation');
-	}, 11000);		
-	setTimeout(function() {
-		$('#intro-part-3 h1').addClass('delete-animation');		
-	}, 14000);	
-	setTimeout(function() {
-		$('#intro-part-3 h1').text("I")
-	}, 15000);	
-	setTimeout(function() {
-		$('#intro-part-3 h1').text("I love to code.")
-		$('#intro-part-3 h1').addClass('retype-animation');		
-	}, 16000);		
-	setTimeout(function() {
-		$('#intro-part-3 h1').text("I love to code. Hire me pls.")
-		$('#intro-part-3 h1').addClass('type-ending-animation');		
-	}, 21000);	
+	}, 3500);		
+	// setTimeout(function() {
+	// 	$('#intro-part-3 h1').addClass('delete-animation');		
+	// }, 5000);	
+	// setTimeout(function() {
+	// 	$('#intro-part-3 h1').text("I")
+	// }, 6000);	
+	// setTimeout(function() {
+	// 	$('#intro-part-3 h1').text("I love to game.")
+	// 	$('#intro-part-3 h1').addClass('retype-animation');		
+	// 	$('#intro-part-3 h1').removeClass('delete-animation');				
+	// }, 7000);	
+	// setTimeout(function() {
+	// 	$('#intro-part-3 h1').addClass('delete-animation');		
+	// }, 9000);	
+	// setTimeout(function() {
+	// 	$('#intro-part-3 h1').text("I")
+	// 	// $('#intro-part-3 h1').removeClass('delete-animation');						
+	// }, 10000);	
+	// setTimeout(function() {
+	// 	$('#intro-part-3 h1').text("I love to dance.")
+	// 	$('#intro-part-3 h1').addClass('retype-animation');		
+	// }, 11000);		
+	// setTimeout(function() {
+	// 	$('#intro-part-3 h1').text("I love to code. Hire me pls.")
+	// 	$('#intro-part-3 h1').addClass('type-ending-animation');		
+	// }, 21000);	
 	setTimeout(function() {
 		$("#button-container").removeClass("no-opacity");
-	}, 19000)
+	}, 4000)
 }
