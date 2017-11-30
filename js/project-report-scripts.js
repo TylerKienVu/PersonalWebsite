@@ -75,7 +75,7 @@ function startAnimation() {
 		$('#logo').removeClass('no-opacity');
 	}, 3000);
 	setTimeout(function() {
-		$('#landing-img').css('filter','brightness(5%)');
+		$('#landing-img').css('filter','brightness(20%)');
 	}, 4000);
 	setTimeout(function() {
 		$('#intro-part-1 h1').removeClass('no-opacity');
