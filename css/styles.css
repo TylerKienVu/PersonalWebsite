@@ -88,7 +88,7 @@ nav {
 	-webkit-transition: all 1.5s;	
 }
 
-.center-img-container {
+.center-container {
 	text-align: center;
 	position: relative;
 }
@@ -154,7 +154,6 @@ nav {
 }
 
 .section-header {
-	position: relative;
 	font-size: 1.5em;	
 	margin-top: 2em;
 	text-align: center;
@@ -239,6 +238,8 @@ nav {
 
 #about {
 	background-color: white;
+	padding-top: 10em;
+	padding-bottom: 10em;
 }
 
 #projects {
@@ -247,10 +248,14 @@ nav {
 
 #experience {
 	background-color: white;
+	padding-top: 15em;
+	padding-bottom: 15em;
 }
 
 #contact {
 	background-color: black;
+	padding-top: 25em;
+	padding-bottom: 25em;
 }
 
 #github-picture {
@@ -268,10 +273,12 @@ nav {
 }
 
 #profile-picture {
-	filter: contrast(115%);
-	margin-top: 1em;
-	margin-bottom: 1em;
-	-webkit-transition:all 1.5s;	
+	display: block;
+	margin-top: 2em;
+	max-width: 100%;
+	height: auto;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 #button-container {
@@ -319,13 +326,22 @@ a:link, a:hover,a:visited, a:active, a {
 	text-align: center;
 }
 
+#bio {
+	display: block;
+	margin-top: auto;
+	margin-bottom: auto;
+	text-align: left;
+	margin-right: 0;
+	margin-left: 0;
+}
+
 /*----------------------------------------------------*/
 /*source: https://css-tricks.com/snippets/css/typewriter-effect/*/
 /*Typewriter effect*/
 .typewriter h1 {
   color: #fff;
   z-index: 2;
-  font-size: 4vw;
+  font-size: 3vw;
   font-family: monospace;
   overflow: hidden; /* Ensures the content is not revealed until the animation */
   border-right: .15em solid #EE5716; /* The typwriter cursor */
@@ -409,7 +425,7 @@ a:link, a:hover,a:visited, a:active, a {
 	height: 50vh;
 }
 /*-------------------------------------------------*/
-@media screen and (max-width: 320px) {
+/*@media screen and (max-width: 320px) {
 	#ttd-border{
 		width: 80%;
 	}
@@ -546,7 +562,7 @@ a:link, a:hover,a:visited, a:active, a {
 		height: 140px;
 		width: 70%;
 	}
-}
+}*/
 
 
 
