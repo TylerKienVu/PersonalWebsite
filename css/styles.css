@@ -45,99 +45,13 @@ nav {
 	-webkit-transition: all 1.5s;		
 }
 
-.details {
-	width: 100%;
-	margin-left: auto;
-	margin-right: auto;
-	word-wrap: break-word;
-	-webkit-transition: all 1.5s;
-	margin-top: 2vh;
-    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,
-    "Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
-    font-size: 1em;
-    font-weight: 400;	
-}
-
-
-.info-box {
-	position: relative;
-	margin-top: 2em;
-	margin-bottom: 5em;
-	width: 100%;
-	margin-left: auto;
-	margin-right: auto;
-}
-
-.card-header {
-	text-align: center;
-}
-
-.card-body {
-	text-align: center;
-	width: 70%;
-	margin-left: auto;
-	margin-right: auto;
-}
-
-.card {
-	border: 2px solid #EE5716;
-}
-
-.info-heading {
-	color: black;
-	-webkit-transition: all 1.5s;	
-}
-
 .center-container {
 	text-align: center;
 	position: relative;
 }
 
-.small-img-container {
-	margin-left: auto;
-	margin-right: auto;
-	height: 250px;
-	width: 250px;
-	-webkit-transition: all 2.5s;
-}
-
-.skill {
-	display: inline-block;
-	height: 5em;
-	width: 5em;
-	margin: 1em;
-	border-radius: 50%;
-	border:3px solid #EE5716;	
-}
-
-.work {
-	display: inline-block;
-	margin: 1em;
-}
-
-.work-img-container {
-	height: 5em;
-	width: 5em;
-	margin-left: auto;
-	margin-right: auto;
-}
-
-.circle-img {
-	object-fit: cover;
-	width: 100%;
-	height: 100%;
-	border-radius: 50%;
-	border:3px solid #EE5716;
-}
-
 .bg-custom {
 	background-color: black;
-}
-
-.centered-axis-x {
-    position: absolute;
-    left: 50%;
-    transform: translate(-50%, 0);
 }
 
 .custom-border {
@@ -160,51 +74,15 @@ nav {
 	color: #EE5716;
 	-webkit-transition: all 1.5s;
 }
-.no-bottom-margin {
-	margin-bottom: 0;
-}
-.top-margin {
-	margin-top: 3em;
-}
-
-.skill-img {
-	object-fit: contain;
-	position: relative;
-	top: 10%;
-	height: 80%;
-	width: auto;
-	margin-left: auto;
-	margin-right: auto;
-}
-
-.transition-general {
-	-webkit-transition:all 1s;	
-}
 
 .nav-item a.active i{
     color: #EE5716 !important;
     -webkit-transition: color 1s;
 }
 
-.full-width {
-	width: 100%;
-}
-
-.work-title {
-	margin-top: 1em;
-	margin-bottom: 0;
-	font-size: 1.2em;
-	font-weight: bold;
-}
-
 .nav-item a{
 	color: white !important;
     -webkit-transition: color 1s;	
-}
-
-.btn:focus,.btn:active {
-   outline: none !important;
-   box-shadow: none;
 }
 
 #logo {
@@ -228,12 +106,6 @@ nav {
 	height: 100vh;
 	padding-bottom: 0;
 	padding-top: 0;
-}
-
-#contact-rectangle {
-	color: white;
-	text-align: center;
-	font-size: 1em;
 }
 
 #about {
@@ -265,40 +137,13 @@ nav {
 	padding: 1em;
 }
 
-#ttd-picture {
-	max-width: auto;
-	max-height: 10vh;
-	object-fit: contain;
-	padding: 1em;
-}
-
 #profile-picture {
 	display: block;
 	margin-top: 2em;
 	max-width: 100%;
 	height: auto;
 	margin-left: auto;
-	margin-right: auto;
-}
-
-#button-container {
-	top: 70%;
-	z-index: 2;
-	-webkit-transition: opacity 2.5s;
-}
-
-a:link, a:hover,a:visited, a:active, a {
-	color: #EE5716;
-}
-
-#about-button {
-	color: white;
-	border-width: medium;
-	border-color: #EE5716;
-	-webkit-transition: all 1.5s;
-	padding: 10px 30px;
-	max-width: 70vw;
-	font-size: 4vw;
+	margin-right: 0;
 }
 
 #collapse-button {
@@ -306,7 +151,140 @@ a:link, a:hover,a:visited, a:active, a {
 	-webkit-transition: margin 1s;
 }
 
-#skills-container {
+#bio {
+	display: block;
+	margin-top: auto;
+	margin-bottom: auto;
+	text-align: left;
+	padding-right: 15vw;
+}
+
+a:link, a:hover,a:visited, a:active, a {
+	color: #EE5716;
+}
+
+.btn:focus,.btn:active {
+   outline: none !important;
+   box-shadow: none;
+}
+
+
+/*.info-box {
+	position: relative;
+	margin-top: 2em;
+	margin-bottom: 5em;
+	width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+}*/
+
+/*.card-header {
+	text-align: center;
+}
+
+.card-body {
+	text-align: center;
+	width: 70%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.card {
+	border: 2px solid #EE5716;
+}
+
+.info-heading {
+	color: black;
+	-webkit-transition: all 1.5s;	
+}*/
+
+
+
+/*.skill {
+	display: inline-block;
+	height: 5em;
+	width: 5em;
+	margin: 1em;
+	border-radius: 50%;
+	border:3px solid #EE5716;	
+}
+
+.work {
+	display: inline-block;
+	margin: 1em;
+}
+
+.work-img-container {
+	height: 5em;
+	width: 5em;
+	margin-left: auto;
+	margin-right: auto;
+}*/
+
+/*.circle-img {
+	object-fit: cover;
+	width: 100%;
+	height: 100%;
+	border-radius: 50%;
+	border:3px solid #EE5716;
+}*/
+
+
+
+/*.centered-axis-x {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+*/
+
+
+/*.skill-img {
+	object-fit: contain;
+	position: relative;
+	top: 10%;
+	height: 80%;
+	width: auto;
+	margin-left: auto;
+	margin-right: auto;
+}*/
+
+
+
+/*.full-width {
+	width: 100%;
+}*/
+
+/*.work-title {
+	margin-top: 1em;
+	margin-bottom: 0;
+	font-size: 1.2em;
+	font-weight: bold;
+}*/
+
+
+
+/*#button-container {
+	top: 70%;
+	z-index: 2;
+	-webkit-transition: opacity 2.5s;
+}*/
+
+
+
+/*#about-button {
+	color: white;
+	border-width: medium;
+	border-color: #EE5716;
+	-webkit-transition: all 1.5s;
+	padding: 10px 30px;
+	max-width: 70vw;
+	font-size: 4vw;
+}*/
+
+
+
+/*#skills-container {
 	width: 100%;
 	margin-left: auto;
 	margin-right: auto;
@@ -319,56 +297,45 @@ a:link, a:hover,a:visited, a:active, a {
 #skill-description {
 	width: 100%;
 	overflow: auto;
-}
+}*/
 
-#work-description {
+/*#work-description {
 	width: 100%;
 	text-align: center;
-}
+}*/
 
-#bio {
-	display: block;
-	margin-top: auto;
-	margin-bottom: auto;
-	text-align: left;
-	margin-right: 0;
-	margin-left: 0;
-}
 
 /*----------------------------------------------------*/
 /*source: https://css-tricks.com/snippets/css/typewriter-effect/*/
 /*Typewriter effect*/
-.typewriter h1 {
+
+/*.typewriter h1 {
   color: #fff;
   z-index: 2;
   font-size: 3vw;
   font-family: monospace;
-  overflow: hidden; /* Ensures the content is not revealed until the animation */
-  border-right: .15em solid #EE5716; /* The typwriter cursor */
-  white-space: nowrap; /* Keeps the content on a single line */
-  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
-  letter-spacing: .15em; /* Adjust as needed */
-}
+  overflow: hidden; 
+  border-right: .15em solid #EE5716; 
+  white-space: nowrap; 
+  margin: 0 auto; 
+  letter-spacing: .15em; 
+}*/
 
-/* The typing effect */
-@keyframes typing {
+/*@keyframes typing {
   from { width: 0 }
   to { width: 100% }
 }
 
-/* The typewriter cursor effect */
 @keyframes blink-caret {
   from, to { border-color: transparent }
   50% { border-color: #EE5716 }
 }
 
-/* Delete effect */
 @keyframes delete {
 	from { width: 100% }
 	to { width: 10% }
 }
 
-/* Retype effect */
 @keyframes retype {
 	from { width: 10% }
 	to { width: 100% }
@@ -423,146 +390,8 @@ a:link, a:hover,a:visited, a:active, a {
 	width: 100vw;
 	top: 20%;
 	height: 50vh;
-}
-/*-------------------------------------------------*/
-/*@media screen and (max-width: 320px) {
-	#ttd-border{
-		width: 80%;
-	}
-	#about-button {
-		padding: 5px 5px;
-		font-size: 0.9em;
-	}	
-	#logo {
-		height: 5em;
-		width: 5em;
-	}	
-}
-
-@media screen and (min-width: 768px) {
-	.info-heading {
-		font-size: 1em;
-	}
-	.card-body, {
-		font-size: 1em;
-	}
-	.block-text {
-		font-size: 1.1em;
-		width: 80%;
-	}
-	.nav-link {
-		font-size: 1em;
-	}
-	#logo {
-		height: 13em;
-		width: 13em;
-	}
-	.details,#skills-container {
-		width: 70%;
-	}
-}
-
-@media screen and (min-width: 1024px) {
-	.block-text {
-		font-size: 1.2em;
-		width: 70%;
-	}
-	#ttd-picture {
-		max-width: 500px;
-	}	
-	.typewriter h1 {
-		font-size: 2em;
-	}
-	.nav-link {
-		font-size: 1.1em;
-	}
-	.info-heading {
-		font-size: 1.2em;
-	}
-	.card-body, {
-		font-size: 1.2em;
-	}
-	#logo {
-		height: 15em;
-		width: 15em;
-	}
-	#about-button:hover {
-		background-color: none;
-		-webkit-transition: all 1.5s;
-		font-size: 2.5vw;
-	}	
-	#about-button {
-		font-size: 2vw;
-	}
-	.typewriter h1 {
-	  font-size: 2vw;
-	}	
-	.info-box {
-		width: 70%;
-	}
-
-}
-
-@media screen and (min-width: 1440px) {
-	.nav-link {
-		font-size: 1.2em;
-	}	
-	.block-text {
-		font-size: 1.7em;
-	}	
-	.info-heading {
-		font-size: 1.3em;
-	}
-	.card-body, {
-		font-size: 1.3em;
-	}	
-	.details {
-		font-size: 1.2em;
-	}
-	.section-header {
-		margin-top: 4em;
-	}
-	.details, #skills-container,.card-body {
-		width: 60%;
-	}	
-}
-
-@media screen and (min-width: 2560px) {
-	.nav-link {
-		font-size: 2em;
-	}
-	#logo {
-		height: 25em;
-		width: 25em;
-	}
-	.block-text {
-		font-size: 2.5em;
-		padding-top: 2em;
-	}
-	.info-heading {
-		font-size: 2em;
-	}
-	.card-body {
-		font-size: 2em;
-	}	
-	.small-img-container {
-		height: 350px;
-		width: 350px;
-	}
-	.typewriter h1 {
-		font-size: 3em;
-	}
-	h2 {
-		font-size: 3em;
-	}
-	.section-header {
-		margin-top: 8em;
-	}		
-	.custom-border {
-		height: 140px;
-		width: 70%;
-	}
 }*/
+
 
 
 

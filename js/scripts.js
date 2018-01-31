@@ -24,42 +24,42 @@ $(document).ready(function(){
 		  });
 		} // End if
 	});
-	$(".skill").click(function(event) {
-		//unhide other skill if hidden
-		$(".skill[hidden]").removeAttr("hidden");
-		//grab skill div
-		var skill = $(this).outerHTML();
-		$(this).attr("hidden","");
+	// $(".skill").click(function(event) {
+	// 	//unhide other skill if hidden
+	// 	$(".skill[hidden]").removeAttr("hidden");
+	// 	//grab skill div
+	// 	var skill = $(this).outerHTML();
+	// 	$(this).attr("hidden","");
 
-		//place skill in description div
-		$("#skill-description").html(skill);
-		$("#skill-description > .skill").css({height:"10em",width:"10em"});
-		var detailString = $("#skill-description > .skill > .details").html();
-		var pElement = "<p class='details'>" + detailString + "</p>"
-		$("#skill-description").append(pElement);
-		$('[data-spy="scroll"]').each(function () {
-		  var $spy = $(this).scrollspy('refresh')
-		})		
+	// 	//place skill in description div
+	// 	$("#skill-description").html(skill);
+	// 	$("#skill-description > .skill").css({height:"10em",width:"10em"});
+	// 	var detailString = $("#skill-description > .skill > .details").html();
+	// 	var pElement = "<p class='details'>" + detailString + "</p>"
+	// 	$("#skill-description").append(pElement);
+	// 	$('[data-spy="scroll"]').each(function () {
+	// 	  var $spy = $(this).scrollspy('refresh')
+	// 	})		
 
-	});
-	$(".work").click(function(event) {
-		//unhide other work if hidden
-		$(".work[hidden]").removeAttr("hidden");
-		//grab work div
-		var work = $(this).outerHTML();
-		$(this).attr("hidden","");
+	// });
+	// $(".work").click(function(event) {
+	// 	//unhide other work if hidden
+	// 	$(".work[hidden]").removeAttr("hidden");
+	// 	//grab work div
+	// 	var work = $(this).outerHTML();
+	// 	$(this).attr("hidden","");
 
-		//place work in description div
-		$("#work-description").html(work);
-		$("#work-description > .work > .work-img-container").css({height:"10em",width:"10em"});
-		$("#work-description > .work > .details").removeAttr("hidden");
-		$("#work-description > .work > .date").removeAttr("hidden");		
-		$("#work-description > .work > .work-title").removeAttr("hidden");		
-		$('[data-spy="scroll"]').each(function () {
-		  var $spy = $(this).scrollspy('refresh')
-		})		
+	// 	//place work in description div
+	// 	$("#work-description").html(work);
+	// 	$("#work-description > .work > .work-img-container").css({height:"10em",width:"10em"});
+	// 	$("#work-description > .work > .details").removeAttr("hidden");
+	// 	$("#work-description > .work > .date").removeAttr("hidden");		
+	// 	$("#work-description > .work > .work-title").removeAttr("hidden");		
+	// 	$('[data-spy="scroll"]').each(function () {
+	// 	  var $spy = $(this).scrollspy('refresh')
+	// 	})		
 
-	});	
+	// });	
 	$(window).scroll(function() {    
 	    var scroll = $(window).scrollTop();
 
@@ -67,51 +67,11 @@ $(document).ready(function(){
 	        $("nav").addClass("bg-custom");
 	        $("#collapse-button").removeClass("mt-3");
 	        $("#collapse-button").removeClass("mr-3");
-	        $("#about-me-header").removeClass("no-opacity");
 	    } else {
 	        $("nav").removeClass("bg-custom");
 	       	$("#collapse-button").addClass("mt-3");
 	        $("#collapse-button").addClass("mr-3");
-	    }
-	    if (isScrolledIntoView("#about-me-header")){
-	    	$("#about-me-header").removeClass("no-opacity");
-	    }
-	    if (isScrolledIntoView("#profile-picture")){
-	    	$("#profile-picture").removeClass("no-opacity");
-	    }	 
-	    // if (isScrolledIntoView("#who")){
-	    // 	$("#who").removeClass("no-opacity");
-	    // }
-	    // if (isScrolledIntoView("#passion")){
-	    // 	$("#passion").removeClass("no-opacity");
-	    // }
-	    // if (isScrolledIntoView("#collaboration")){
-	    // 	$("#collaboration").removeClass("no-opacity");
-	    // }    
-	    // if (isScrolledIntoView("#education")){
-	    // 	$("#education").removeClass("no-opacity");
-	    // }	
-	    // if (isScrolledIntoView("#skills")){
-	    // 	$("#skills").removeClass("no-opacity");
-	    // }	    
-	    if (isScrolledIntoView("#projects-section-header")){
-	    	$("#projects-section-header").removeClass("no-opacity");
-	    }		 
-	    if (isScrolledIntoView("#github-border")){
-	    	$("#github-border").removeClass("no-opacity");
-	    }		
-	    if (isScrolledIntoView("#experience-section-header")){
-	    	$("#experience-section-header").removeClass("no-opacity");
-	    }		               	    	 
-	    // if (isScrolledIntoView("#ttd-border")){
-	    // 	$("#ttd-border").removeClass("no-opacity");
-	    // }	
-	    // if (isScrolledIntoView("#resume-statement")){
-	    // 	$("#resume-statement").removeClass("no-opacity");
-	    // }	 
-	    // if (isScrolledIntoView("#contact-section-header")){
-	    // 	$("#contact-section-header").removeClass("no-opacity");
-	    // }	     	      	          
+	    }	     	      	          
 	});
 });
 
@@ -155,22 +115,22 @@ function startAnimation() {
 	setTimeout(function() {
 		$('#landing-img').css('filter','brightness(20%)');
 	}, 1000);
-	setTimeout(function() {
-		$('#intro-part-1 h1').removeClass('no-opacity');
-		$('#intro-part-1 h1').addClass('short-type-animation');
-	}, 1200);
-	setTimeout(function() {
-		$("#intro-part-1 h1").css('border',"none");		
-		$("#intro-part-1 h1").css('animation',"default");		
-		$('#intro-part-2 h1').removeClass('no-opacity');
-		$('#intro-part-2 h1').addClass('medium-type-animation');
-	}, 2000);	
-	setTimeout(function() {
-		$("#intro-part-2 h1").css('border',"none");		
-		$("#intro-part-2 h1").css('animation',"default");	
-		$('#intro-part-3 h1').removeClass('no-opacity');
-		$('#intro-part-3 h1').addClass('medium-type-animation');
-	}, 3500);		
+	// setTimeout(function() {
+	// 	$('#intro-part-1 h1').removeClass('no-opacity');
+	// 	$('#intro-part-1 h1').addClass('short-type-animation');
+	// }, 1200);
+	// setTimeout(function() {
+	// 	$("#intro-part-1 h1").css('border',"none");		
+	// 	$("#intro-part-1 h1").css('animation',"default");		
+	// 	$('#intro-part-2 h1').removeClass('no-opacity');
+	// 	$('#intro-part-2 h1').addClass('medium-type-animation');
+	// }, 2000);	
+	// setTimeout(function() {
+	// 	$("#intro-part-2 h1").css('border',"none");		
+	// 	$("#intro-part-2 h1").css('animation',"default");	
+	// 	$('#intro-part-3 h1').removeClass('no-opacity');
+	// 	$('#intro-part-3 h1').addClass('medium-type-animation');
+	// }, 3500);		
 	// setTimeout(function() {
 	// 	$('#intro-part-3 h1').addClass('delete-animation');		
 	// }, 5000);	
@@ -197,7 +157,7 @@ function startAnimation() {
 	// 	$('#intro-part-3 h1').text("I love to code. Hire me pls.")
 	// 	$('#intro-part-3 h1').addClass('type-ending-animation');		
 	// }, 21000);	
-	setTimeout(function() {
-		$("#button-container").removeClass("no-opacity");
-	}, 4000)
+	// setTimeout(function() {
+	// 	$("#button-container").removeClass("no-opacity");
+	// }, 4000)
 }
